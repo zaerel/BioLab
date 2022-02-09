@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+    <title> BioLab PT </title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+ body {
+    background: #ebe2c1;  
+} 
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: #54600b;
+    z-index: 100000;
+}
+.nav h2 {
+    color: #c7d676;
+    font-size: 1.5rem;
+}
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;   
+}
+#item li {
+    list-style: none;
+    padding-right: 50px;
+    text-align: right;
+    
+}
+#item li a {
+   text-decoration: none;
+   font-size: 1.7rem;
+   color: #c7d676;
+    
+}
+#item li a:hover, #item .icon i:hover{
+    color: #87ad1e;
+    cursor: pointer;
+}
+    #item .icon i {
+    color: #c7d676;
+    padding-right: 30px;
+}
+.first {
+    position: relative;
+    
+  }
+.first h1 {
+    color: #4d5b06;
+    font-family: fantasy sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+.first p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;
+ }
+.photo1 img {
+    width: 600;
+    height: 500px;
+    padding: 30px 1.5rem;
+    margin-left: 200px;
+
+}
+.second {   
+    position: relative;
+}
+.second p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;
+}
+.photo2 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;
+    
+}
+.second {   
+    position: relative;
+}
+.third p {
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;         
+}
+.photo3 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;
+
+}
+.fourth {
+    position: relative;       
+}
+.fourth p {
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;              
+}
+.photo4 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;
+}
+.fifth {
+     position: relative;       
+} 
+.fifth p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;      
+}
+.photo5 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;        
+}
+.sixth {
+    position: relative;           
+}
+.sixth p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;          
+}
+.photo6 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;               
+}
+.seven {
+    position: relative;           
+}
+.seven p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;          
+}
+.photo7 img{
+    width: 600;
+    height: 500px;
+    padding: 20px 1.5rem;
+    margin-left: 200px;
+    justify-content: center;               
+}
+eight{
+  position: relative;                
+}
+        
+.eight p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;          
+}
+
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i {
+    color: red;
+    padding: 5px;
+}
+.nine {
+    position: relative;
+}
+.nine h2 {
+   color: #4d5b06;
+    font-family: fantasy sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px; 
+    margin-bottom: 15px;
+}
+.nine p {
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;               
+}
+.photo8 img{
+    width: 100;
+    height: 400px;
+    padding: 20px 1.3rem;
+    margin-left: 180px;
+}
+.ten{
+     position: relative;
+}
+.ten h2 {
+   color: #4d5b06;
+    font-family: fantasy sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px; 
+    margin-bottom: 15px;
+ }
+.ten p{
+    color: #4d5b06;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 20px;          
+}
+ .photo9 img{
+    width: 100;
+    height: 400px;
+    padding: 20px 1.3rem;
+    margin-left: 180px;
+     margin-bottom: 30px;
+}            
+</style>
+    
+    
+  <body>  
+ <div class="nav">
+     <h2>BioLab</h2>
+     <ul id="item">
+          <li><a href="Index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>   
+     </ul>
+    
+      </div>
+      <div class="first">
+      <h1><br> <br> <br> Lesson 1: Photosynthesis</h1>
+     <p>Nearly all life on Earth depends on photosynthesis. Plants, algae, and some types of bacteria use photosynthesis to make their own food and release oxygen.<br> The biochemical process involves using energy from sunlight to convert water and carbon dioxide into oxygen&nbsp;and glucose.
+          <br> <br> Carbon dioxide + water → glucose + oxygen </p>
+    </div>
+     <div class="photo1">
+         <img src="photos/image7.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="second">
+      <p> Water is absorbed by the root hair cells and is transported to the leaf by the xylem vessels. Oxygen is released through the stomata on the underside of the leaf;<br> glucose is transported around the plant in the phloem vessels.</p>
+      </div>
+      <div class="photo2">
+       <img src="photos/photo2.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="third"> 
+      <p> Plant transport tissues the xylem transports water and minerals from the roots up the plant stem and into the leaves. <br> In a mature flowering plant or tree, most of the cells that make up the xylem are specialised cells called vessels.</p> 
+      </div>
+      
+      <div class="photo3">
+      <img src="photos/photo3.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="fourth">
+      <p>The phloem moves food substances that the plant has produced by photosynthesis to where they are needed for processes.<br> Transport in the phloem is both up and down the stem.</p>
+      </div>
+      <div class="photo4">
+      <img src="photos/photo4.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="fifth">
+      <p> A leaf usually has a large surface area, so that it can absorb a lot of light. Its top surface is protected from water loss, disease and weather damage by a waxy layer. The upper part of the leaf is where the light falls, and it contains a type of cell called a palisade cell.<br> This is adapted to absorb a lot of light. It has lots of chloroplasts and is shaped like a tall box.</p>
+      </div>
+      <div class="photo5">
+      <img src="photos/photo5.5.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="sixth">
+      <p>Plant cells are composed of rigid cell walls made of cellulose, chloroplasts which help with photosynthesis, a nucleus, and large vacuoles filled with water.</p>
+      </div>
+      <div class="photo6">
+      <img src="photos/photo5.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class= "seven">
+      <p>Photosynthesis takes place in the part of the plant cell containing chloroplasts, these are small structures that contain chlorophyll.
+      For photosynthesis to take place, plants need to take in carbon dioxide (from the air), <br> water (from the ground) and light (usually from the sun). Plants get carbon dioxide from the air through their leaves, and water from the ground through their roots. Light energy comes from the Sun.</p>
+      </div>
+      <div class="photo7">
+      <img src="photos/photo6.PNG" data-aos="fade-up">
+      </div>
+      
+      <div class="eight">
+    <p> In photosynthesis,there are two types of reaction; <br> The reactions that make up the process of photosynthesis can be divided into light-dependent reactions, which take place in the thylakoids, <br> and light-independent reactions (also known as dark reactions or the Calvin cycle), which take place in the stroma. </p>
+      </div>
+      
+       <div class="nine" data-aos="fade-up">
+           <h2><br>  Light Dependent Reaction </h2>
+     <p>A photochemical reaction taking place in the thylakoid membranes of chloroplasts, where light energy is transformed into adenosine triphosphate (ATP) and nicotinamide adenine dinucleotide phosphate (NADPH).</p>
+    </div>
+      
+      <div class="photo8">
+      <img src="photos/6d9a283bbb29a63937a255851697b691.jpg" data-aos="fade-up">
+      </div>
+      
+      <div class="ten" data-aos="fade-up">
+           <h2><br> Calvin Cycle </h2>
+     <p>The process plants and other autotrophs use to create nutrients from sunlight and carbon dioxide. The Calvin cycle is a process that plants and algae use to turn carbon dioxide from the air into sugar, the food autotrophs need to grow.</p>
+    </div>
+      
+      <div class="photo9">
+      <img src="photos/a051xbITKxFCLv2pN2Aw_lightindependent.png" data-aos="fade-up">
+      </div>
+      
+      <div class="footer">
+    <p> Copyright © 2022 BioLab Co. <br>More update and features to come<br> Made with ♡ by Zhyrel Benito</p>
+          
+        <p> <i class="fa fa-envelope-o" aria-hidden="true"></i> hello@company.co <br> <i class="fa fa-phone" aria-hidden="true"></i>000-000-000 </p>
+    </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      
+  <script>  
+    AOS.init({
+        offset: 140,
+        duration: 900,
+    });
+  </script>
+      
+    </body>
+</html>

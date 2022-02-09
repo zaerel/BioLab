@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: #54600b;
+    z-index: 100000;
+}
+.nav h2 {
+    color: #c7d676;
+    font-size: 1.5rem;
+}
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+#item li {
+    list-style: none;
+    padding-right: 50px;
+    
+}
+#item li a {
+   text-decoration: none;
+   font-size: 1rem;
+   color: #c7d676;
+    
+}
+#item li a:hover, #item .icon i:hover{
+    color: #87ad1e;
+    cursor: pointer;
+}
+#item .icon i {
+    color: #c7d676;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+#bar {
+    color: #c7d676;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.background {
+    background-image: url(photos/greenbackground.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mid p{
+    color: #4d5b06;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+
+}
+.mid h2 {
+    color: #4d5b06;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.mid .btn {
+    margin-top: 1rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.mid .btn a.border{
+     color: #827345;
+     border: 1px solid #827345;
+     font-weight: 500;
+     text-decoration: none;
+     padding: 6px 15px;    
+     border-radius: 3px;
+        
+}
+.mid .btn a.border:hover{
+    background: #87ad1e;
+    color: #f8e8c4;
+    border: 1px solid #87ad1e;
+}
+.Info{
+    background: #eff8d1;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.Info .about{
+    width: 39%;
+}
+
+.Info .about h2{
+    color: #4d5b06;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;   
+}  
+.Info .about p {
+    color: #4d5b06;
+    font-size: 1.1rem;
+}
+.Info .img img {
+ height: 540px;
+    
+}
+.class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+    background: #dceeba;
+}
+.class .paragraph {
+    font-size: 1.3rem;
+    color: #6c7644;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.class .h2 {
+    font-size: 2.2rem;
+    color: #4d5b06;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;   
+}
+.class .classMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.class .classMenu .team1{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0.16px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+.class .classMenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;  
+}
+.classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+    
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+
+}
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p span {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.class .classMenu .team1 .teamDetails .name .num h5 {
+    font-size: 1rem;
+    color: #fff;
+    background: #4d5b06;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+.class .classMenu .team1 .pro p  {
+    padding: 15px 30px 30px 30px;
+}
+.class .classMenu .team1 .pro p {
+    font-size: 1rem;
+    color: #666262; 
+}
+.contact {
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact .form {
+    width: 45%; 
+
+}
+.contact .form h2 {
+    font-size: 2rem;
+    color: #4d5b06;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 1px solid #4d5b06;
+}
+.contact .form .submit input::placeholder{
+    color: #7f9c8d;
+    font-size: 1.1rem;
+    
+}
+.contact .form .submit textarea::placeholder{
+    color: #7f9c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #4d5b06;
+    color: #f8e8c4;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+.contact .map{
+    width: 45%;
+    
+}
+.contact .map h2{
+    font-size: 2rem;
+    color: #4d5b06;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 1.1rem;
+    color: #4d5b06;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.contact .map p i{
+    color: red;
+    padding-right: 4px;
+}
+.contact .map iframe{
+    width: 100%;
+}
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i{
+    color: red;
+    padding: 5px;
+}
+
+/*- - -Media Query- - -*/
+
+@media screen and (max-width: 1042px){
+ 
+    .nav {
+    padding: 1rem 4.5rem;
+   }
+   .nav h2 {
+    font-size: 1.4rem;
+   }
+   #item li {
+   padding-right: 30px;
+    
+   }
+   #item li a {
+   font-size: 0.9rem;
+    
+   }
+   #item .icon i {
+   padding-right: 20px;
+    
+}
+}
+@media screen and (max-width: 991px) {
+    
+    .nav {
+    padding: 1rem 3rem;
+    }
+    .nav h2 {
+    font-size: 1.6rem;
+    }
+    #item {
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: rgba(0,0,0,0.8);
+    z-index: 100000;
+    margin-top: 4.2rem;
+    transition: 0.5s;
+    
+    }
+    #item li {
+    padding-right: 0;
+        padding: 4px 0;
+    }
+    #item li a {
+    font-size: 1.2rem;
+    
+    }
+    #item .icon {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;    
+    }
+    #item .icon i {
+    padding: 0 15px 0 15px;
+    }
+    #bar {
+    display: initial;
+    cursor: pointer;
+    }
+    
+    .mid p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+
+   }
+    .mid h2 {
+    font-size: 2.5rem;
+        
+   }
+    .mid .btn {
+    margin-top: 1.5rem;
+        
+   }
+   .mid .btn a{
+    font-size:0.9rem;
+    
+   }
+   .mid .btn a.border{
+   padding: 0.7rem 1.4rem;    
+        
+   } 
+    .Info{
+    padding: 6rem 7rem;
+    }
+   .Info .about h2{
+    font-size: 2rem;
+    padding-bottom: 1.4rem;   
+    }  
+    .Info .about p {
+    font-size: 1rem;
+    }
+    .Info .img img {
+    height: 440px;
+    
+    }
+    
+    .class {
+    padding: 6rem;
+    }
+    .class .paragraph {
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+        
+    }
+    .class .h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;  
+    }
+    .classMenu .team1 .teamDetails{
+    padding-bottom: 7px;
+    }
+   .class .classMenu .team1 .teamDetails .name{
+    padding: 5px 15px 0 15px;
+    
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    font-size: 1.2em;
+
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+    font-size: 1rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .nameDetails p span {
+    font-size: 1rem;
+    }
+    .class .classMenu .team1 .teamDetails .name .num h5 {
+    font-size: 0.9rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    }
+    .class .classMenu .team1 .pro p  {
+    padding: 15px 15px 30px 15px;
+    }
+    .class .classMenu .team1 .pro p {
+    font-size: 1rem; 
+    }
+    
+    .contact {
+    padding: 6rem;
+    }
+    .contact .form h2 {
+    font-size: 2rem;
+    padding-bottom: 7px;
+    }
+    
+    .contact .map p{
+    font-size: 1rem;
+    padding-bottom: 20px;
+    }
+    .footer{
+    padding: 6rem;
+    }
+}
+
